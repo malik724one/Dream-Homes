@@ -160,7 +160,7 @@ body {
 
 /* Layer 1: Background Image */
 .hero-section {
-  background-image: url('media/Image/hero-bg.jpg');
+  background-image: url('media/hero-bg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1426,3 +1426,4 @@ body {
     font-size: 1.6rem;
   }
 }
+
