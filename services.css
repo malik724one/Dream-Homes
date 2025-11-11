@@ -103,7 +103,7 @@ body {
 
 /* ===== HERO SECTION ===== */
 .services-hero {
-  background: url("media/Image/mani.jpg") center/cover no-repeat;
+  background: url("media/mani.jpg") center/cover no-repeat;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -383,3 +383,4 @@ body {
     font-size: 1.6rem;
   }
 }
+
