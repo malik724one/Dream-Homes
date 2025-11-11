@@ -1,0 +1,411 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2b1e0f;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  background-color: #2c1b0f; /* property site theme (dark brown) */
+  color: white;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* ===== NAVIGATION ===== */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #ffffff; /* gold highlight */
+}
+
+/* ===== HAMBURGER BUTTON ===== */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #2c1b0f;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* ===== CONTACT HERO SECTION ===== */
+.contact-hero {
+  position: relative;
+  background-image: url("media/Luxury\ Apartment.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 17, 10, 0.65); /* dark overlay for readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff; /* gold tone */
+  margin-bottom: 15px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f9f9f9;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 60vh;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-hero p {
+    font-size: 1rem;
+  }
+}
+
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  padding: 100px 20px;
+}
+
+.contact-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1 1 450px;
+  background: #f7f5f0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== FORM ===== */
+.contact-form h3 {
+  margin-bottom: 8px;
+}
+
+.contact-form p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f7f5f0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn.primary {
+  background: #2b1e0f;
+  color: #f7f5f0;
+}
+
+.btn.primary:hover {
+  background: #4a341e;
+}
+
+.btn.secondary {
+  background: #f7f5f0;
+}
+
+.btn.secondary:hover {
+  background: #f7f5f0;
+}
+
+/* ===== INFO CARD ===== */
+.contact-info h3,
+.contact-info h4 {
+  color: #2b1e0f;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #2b1e0f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  color: #c4a45b;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #f7f5f0;
+  margin: 15px 0;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
+  background-color: #2b1e0f;
+  color: #fff;
+  padding: 80px 10% 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+/* Footer About */
+.footer-about {
+  flex: 1 1 200px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-about p {
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Footer Links */
+.footer-links {
+  flex: 1 1 200px;
+}
+
+.footer-links h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #ffcc80;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffcc80;
+}
+
+/* Footer Contact */
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-contact h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #ffcc80;
+}
+
+.footer-contact p {
+  color: #ddd;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a:hover {
+  background: #ffcc80;
+  color: #2b1e0f;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+@media (max-width: 768px) {
+  .site-footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-links,
+  .footer-about,
+  .footer-contact {
+    flex: 1 1 100%;
+  }
+
+  .footer-logo {
+    font-size: 1.6rem;
+  }
+}
+
